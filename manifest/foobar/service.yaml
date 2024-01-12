@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: foobar-service
+spec:
+  selector:
+    app: foobar
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8080

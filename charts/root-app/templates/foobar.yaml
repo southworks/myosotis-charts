@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: foobar
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/southworks/myosotis.git
+    targetRevision: HEAD
+    path: Spikes/rancher/multiregion/manifest/foobar
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: foobar
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true

@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-foobar
+spec:
+  rules:
+  - http:
+      paths:
+      - pathType: Prefix
+        path: /foobar
+        backend:
+          service:
+            name: foobar-service
+            port:
+              number: 80
+  # ingressClassName: nginx-eastus #TODO:
+  # ingressClassName: nginx #TODO:
