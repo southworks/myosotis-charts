@@ -11,6 +11,6 @@ argo-cd:
       - --insecure
     ingress:
       enabled: true
-      # ingressClassName:
+      ingressClassName: nginx
       # paths:
       #   - /argo-cd # DO NOT CHANGE PATH
