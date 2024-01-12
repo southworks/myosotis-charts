@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/southworks/myosotis.git
+    repoURL: https://github.com/southworks/myosotis-charts.git
     targetRevision: HEAD
-    path: Spikes/rancher/multiregion/manifest/foobar
+    path: manifest/foobar
   destination:
     server: https://kubernetes.default.svc
     namespace: foobar

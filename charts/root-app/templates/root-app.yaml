@@ -7,8 +7,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/southworks/myosotis.git
-    path: Spikes/rancher/multiregion/charts/root-app
+    repoURL: https://github.com/southworks/myosotis-charts.git
+    path: charts/root-app
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
