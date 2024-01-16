@@ -14,4 +14,4 @@ spec:
             port:
               number: 80
   # ingressClassName: nginx-eastus #TODO:
-  # ingressClassName: nginx #TODO:
+  ingressClassName: nginx #TODO:

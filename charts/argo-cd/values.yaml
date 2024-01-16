@@ -8,9 +8,10 @@ argo-cd:
     enabled: false
   server:
     extraArgs:
-      - --insecure
+      - --insecure # deprecated warning
     ingress:
       enabled: true
       ingressClassName: nginx
-      # paths:
-      #   - /argo-cd # DO NOT CHANGE PATH
+  configs: 
+    params: 
+      server.insecure: true
