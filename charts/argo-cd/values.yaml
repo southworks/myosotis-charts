@@ -7,11 +7,9 @@ argo-cd:
   applicationSet:
     enabled: false
   server:
-    extraArgs:
-      - --insecure # deprecated warning
     ingress:
       enabled: true
-      ingressClassName: nginx
+      ingressClassName: nginx-eastus
   configs: 
     params: 
       server.insecure: true
